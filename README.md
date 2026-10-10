@@ -9,10 +9,10 @@
 - 导入.OpenCV库、NumPy库、Matplotlib库、scikit-image库。
 
 ### 2、读取原始图像并进行色彩空间转换
-1. 为了后续方便绘图，定义一个绘图函数`plot_bgr（BGR, Title）`，如下所示：
+1. 为了后续方便绘图，定义一个绘图函数，如下所示：
 
-2. 读入 "pilot.jpg"，需要注意 OpenCV 默认读取的图像格式是 BGR（蓝-绿-红通道），而不是常见的 RGB（红-绿-蓝通道）。可以使用 OpenCV 的 `cv2.cvtColor` 颜色空间转换函数转换为 RGB 。
-3. 但在实际绘图时，我更倾向于直接使用切片操作 `img[..., ::-1]`，更加简洁高效（`plot_bgr`）。
+2. 读入"pilot.jpg"，需要注意OpenCV默认读取的图像格式是BGR（蓝-绿-红通道），而不是常见的RGB（红-绿-蓝通道）。可以使用OpenCV的颜色空间转换函数转换为RGB。
+3. 但在实际绘图时，我更倾向于直接使用切片操作，更加简洁高效。
 -原图及灰度图如下：
 <img width="460" height="196" alt="2f26b782119c3da511eb62977e91cee" src="https://github.com/user-attachments/assets/e18b0682-51df-4b86-a586-abc14f058429" />
 
@@ -24,8 +24,7 @@
 ### 4、图像滤波
 -
 -图像滤波对⽐图：
-<img width="813" height="200" alt="1c5d48a56c182242b0e1d0ab251d5ce" src="https://github.com/user-attachments/assets/6c690289-9279-46ea-a0f2-89f21f7f6859" />
-<img width="802" height="198" alt="03ee6464fe91215f11bf74cdaff4f1a" src="https://github.com/user-attachments/assets/90769d8e-781b-42c8-a177-f11d0877789d" />
+<img width="813" height="200" alt="1c5d48a56c182242b0e1d0ab251d5ce" src="https://github.com/user-attachments/assets/6c690289-9279-46ea-a0f2-89f21f7f6859" /><img width="802" height="198" alt="03ee6464fe91215f11bf74cdaff4f1a" src="https://github.com/user-attachments/assets/90769d8e-781b-42c8-a177-f11d0877789d" />
 
 ### 5、中值滤波
 -
