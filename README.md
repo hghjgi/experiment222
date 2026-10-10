@@ -6,10 +6,10 @@
 
 ## 二、实验内容
 ### 1、导入图像滤波相关依赖包
-- 1.OpenCV库：计算机视觉与图像处理 <br>
-- 2.scikit-image库：图像增强与分析，random_noise 用于给图像添加噪声<br>
-- 3.NumPy库：科学计算的基础库<br>
-- 4.Matplotlib库：绘图与数据可视化<br>
+- OpenCV库：计算机视觉与图像处理 <br>
+- scikit-image库：图像增强与分析，random_noise 用于给图像添加噪声<br>
+- NumPy库：科学计算的基础库<br>
+- Matplotlib库：绘图与数据可视化<br>
 ```
 # =====================导入依赖库=====================
 import cv2
