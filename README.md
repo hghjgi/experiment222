@@ -6,7 +6,7 @@
 
 ## 二、实验内容
 ### 1、导入图像滤波相关依赖包
-- OpenCV库：计算机视觉与图像处理 <br>
+- OpenCV库：计算机视觉与图像处理<br>
 - scikit-image库：图像增强与分析，random_noise 用于给图像添加噪声<br>
 - NumPy库：科学计算的基础库<br>
 - Matplotlib库：绘图与数据可视化<br>
@@ -19,7 +19,7 @@ from matplotlib import pyplot as plt
 ```
 
 ### 2、读取原始图像并进行色彩空间转换
-读取计算机本地图像文件，获取并输入【100，100】处像素点的RBG参数并输出,通过下面的输出结果可以看到，【100,100】像素点的RGB为【82,86,241】，表现为偏蓝色，通过图像也可以看到这个像素点属于猫猫的衣服处的深蓝色部位。
+- 读取计算机本地图像文件，获取并输入【100，100】处像素点的RBG参数并输出,通过下面的输出结果可以看到，【100,100】像素点的RGB为【82,86,241】，表现为偏蓝色，通过图像也可以看到这个像素点属于猫猫的衣服处的深蓝色部位。<br>
 ```
 # ====================读取原始图像=====================
 img = cv2.imread('p1.jpg')
@@ -37,7 +37,8 @@ plt.show()
 - 输出：
         82 86 241
 ```
-cv2.COLOR_BGR2GRAY是将原始图像的RBG格式转换为灰度图，将三维的RGB通道映射为一维的灰度通道
+
+- cv2.COLOR_BGR2GRAY是将原始图像的RBG格式转换为灰度图，将三维的RGB通道映射为一维的灰度通道<br>
 ```
 # 将原始图像的RBG格式转换为灰度图
 gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -46,7 +47,7 @@ plt.title('Gray Image')
 plt.savefig('output_images/gray_image.jpg', dpi=300)
 plt.show()
 ```
--原图及灰度图如下：
+原图及灰度图如下：
 <img width="460" height="196" alt="2f26b782119c3da511eb62977e91cee" src="https://github.com/user-attachments/assets/e18b0682-51df-4b86-a586-abc14f058429" />
 
 ### 3、添加噪声
